@@ -2,7 +2,7 @@ import * as discord from 'discord.js';
 import { createTranscript } from '../src';
 
 import { config } from 'dotenv';
-config();
+config(1);
 
 const { GuildMessages, Guilds, MessageContent } = discord.GatewayIntentBits;
 
@@ -25,7 +25,7 @@ client.on('ready', async () => {
     // options go here
   });
 
-  console.timeEnd('transcript');
+  console.timeEnd
 
   await channel.send({
     files: [attachment],
@@ -35,4 +35,4 @@ client.on('ready', async () => {
   process.exit(0);
 });
 
-client.login(process.env.TOKEN!);
+client.login
